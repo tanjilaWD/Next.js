@@ -1,0 +1,24 @@
+import React from 'react';
+import Link from 'next/link';
+
+const layout = ({children}) => {
+    return (
+        <main>
+        <div>
+            <nav>
+            <ul className="flex gap-6">
+            <li>
+            <Link href="/about/mission">Mission</Link>
+            </li>
+            <li>
+            <Link href="/about/vision">Vision</Link>
+            </li>
+            </ul>
+            </nav>
+            {children}
+        </div>
+        </main>
+    );
+};
+
+export default layout;
