@@ -1,9 +1,14 @@
 
-
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function BlogPage({ params }) {
+  
   const resolvedParams = await params;
+  
+ if (resolvedParams.id === '3'){
+  notFound();
+ }
 
   return (
     <main className="mt-6">
@@ -14,5 +19,3 @@ export default async function BlogPage({ params }) {
     </main>
   );
 }
-
-
