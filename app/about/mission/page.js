@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Button from "@/app/Components/Button";
 import thumb from "@/public/image/img.jpg";
+
+export const metadata = {
+  title: "About Us",
+  description: "This is a blog about page",
+};
+
 const page = () => {
     return (
     <main>
